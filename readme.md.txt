@@ -1,0 +1,1 @@
+This is a custom site project - the site is just practice for site building but will soon have a clear purpose
