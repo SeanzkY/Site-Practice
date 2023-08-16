@@ -1,0 +1,19 @@
+        {% load static %}
+
+<!DOCOTYPE html>
+<html lang="en">
+<head>
+    <title>Game</title>
+        {% include 'siteTemplate.html' %}
+        <link rel="stylesheet" href="{% static 'game.css' %}">
+
+</head>
+
+
+<body>
+    <h1 class="title"> TicTacToe</h1>
+    <div class="board">
+       <img src="{% static 'board.png' %}" alt="pic1" width="500" height="500">
+    </div>
+</body>
+</html>
