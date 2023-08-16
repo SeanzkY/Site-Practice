@@ -1,0 +1,52 @@
+
+body{
+  background-color: #d9d9d9 !important;
+}
+
+.sidebar{
+display: flex;
+justify-content: space-evenly;
+ margin: auto;
+
+  width: 100%;
+  padding: 70px;
+    background-image: url("gus_berk.jpeg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 300px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+
+  }
+.Title{
+        width: 10%;
+
+        margin-top: 100px;
+      text-align: center;
+        color: black;
+        font-size: 40px;
+}
+
+.content{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 250px;
+    margin-right: 25px;
+    color: black;
+    font-size: 25px;
+    display: flex;
+
+
+}
+
+.media{
+    display: flex;
+     margin-left: 600px;
+
+}
+
+.center{
+display: flex;
+justify-content: center;
+align-items: center;
+}

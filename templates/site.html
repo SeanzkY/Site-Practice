@@ -1,0 +1,101 @@
+        {% load static %}
+
+<!DOCOTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <link rel="stylesheet" href="{% static 'design.css' %}">
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </head>
+
+
+
+    <body>
+    <div class="sidebar">
+
+    <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown button
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div>
+
+         <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown button
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div>
+
+
+         <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown button
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div>
+    </div>
+    <div class="center">
+
+    <h1 class="Title" onmouseover="mOver(this)"  onmouseout="mOut(this)" > Cool App</h1>
+    <br><br>
+            </div>
+
+    <div class="content">
+
+        <p id="write"> Hi this is some information about a certain thing   </p>
+        <button class="arrow" onclick="add_content()">       > </button>
+
+    </div>
+
+    <div class="media">
+         <img src="{% static 'pic.jpg' %}" alt="pic1" width="500" height="500" id="bottom_img">
+    </div>
+
+<script>
+function mOver(obj) {
+  obj.innerHTML = "Very Cool App"
+}
+
+function mOut(obj) {
+  obj.innerHTML = "Cool App"
+}
+</script>
+
+
+
+<script>
+let counter = 1;
+function add_content(){
+    counter ++;
+    if(counter%2==0){
+        document.getElementById("write").innerHTML = "Hi this is some information about another thing";
+         document.getElementById("bottom_img").src = "{% static 'gus_berk1.jpg' %}";
+    }
+    else{
+        document.getElementById("write").innerHTML = "Hi this is some information about a certain thing";
+        document.getElementById("bottom_img").src = "{% static 'pic.jpg' %}";
+    }
+
+}
+</script>
+
+
+
+    </body>
+</html>
